@@ -20,7 +20,7 @@
 
   <artifactId>act-maven-archetypes</artifactId>
   <packaging>pom</packaging>
-  <version>1.8.5.0-BETA-2</version>
+  <version>1.8.5.0-BETA-3-SNAPSHOT</version>
 
   <name>ActFramework Maven Archetypes Project</name>
   <description>A set of maven archetypes for actframework application</description>
