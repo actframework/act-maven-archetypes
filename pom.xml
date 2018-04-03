@@ -19,6 +19,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>act-maven-archetypes</artifactId>
+  <packaging>pom</packaging>
   <version>${revision}</version>
 
   <name>ActFramework Maven Archetypes Project</name>
@@ -75,12 +76,19 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-resources-plugin</artifactId>
+        <version>3.0.2</version>
         <configuration>
           <addDefaultExcludes>false</addDefaultExcludes>
           <escapeString>\</escapeString>
         </configuration>
       </plugin>
     </plugins>
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.archetype</groupId>
+        <artifactId>archetype-packaging</artifactId>
+      </extension>
+    </extensions>
   </build>
 
 </project>
