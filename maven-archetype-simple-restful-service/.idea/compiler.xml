@@ -13,7 +13,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="archetype-simple-restful-service" target="1.7" />
+      <module name="archetype-simple-restful-service" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
