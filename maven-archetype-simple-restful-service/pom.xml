@@ -23,7 +23,7 @@
   <parent>
     <groupId>org.actframework</groupId>
     <artifactId>act-maven-archetypes</artifactId>
-    <version>${revision}</version>
+    <version>1.8.5.0-BETA-1</version>
   </parent>
 
 </project>
