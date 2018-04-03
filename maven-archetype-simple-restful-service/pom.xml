@@ -35,6 +35,16 @@
     <version>1.8.5</version>
   </parent>
 
+  <properties>
+    <scm.url>git@github.com:actframework/act-maven-archetypes.git</scm.url>
+  </properties>
+
+  <scm>
+    <connection>scm:git:${scm.url}</connection>
+    <developerConnection>scm:git:${scm.url}</developerConnection>
+    <url>${scm.url}</url>
+  </scm>
+
   <build>
     <resources>
       <resource>
