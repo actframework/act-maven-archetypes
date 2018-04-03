@@ -18,58 +18,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>archetype-simple-restful-service</artifactId>
-  <version>1.8.5.1-SNAPSHOT</version>
-
   <name>ACT Maven Archetype for a simple RESTFUL service</name>
-  <inceptionYear>2018</inceptionYear>
-
-  <organization>
-    <name>ActFramework</name>
-    <url>http://actframework.org</url>
-  </organization>
 
   <parent>
     <groupId>org.actframework</groupId>
-    <artifactId>parent</artifactId>
-    <version>1.8.5</version>
+    <artifactId>act-maven-archetypes</artifactId>
+    <version>${revision}</version>
   </parent>
 
-  <properties>
-    <scm.url>git@github.com:actframework/act-maven-archetypes.git</scm.url>
-  </properties>
-
-  <scm>
-    <connection>scm:git:${scm.url}</connection>
-    <developerConnection>scm:git:${scm.url}</developerConnection>
-    <url>${scm.url}</url>
-  </scm>
-
-  <build>
-    <resources>
-      <resource>
-        <directory>src/main/resources</directory>
-        <filtering>true</filtering>
-        <includes>
-          <include>archetype-resources/pom.xml</include>
-        </includes>
-      </resource>
-      <resource>
-        <directory>src/main/resources</directory>
-        <filtering>false</filtering>
-        <excludes>
-          <exclude>archetype-resources/pom.xml</exclude>
-        </excludes>
-      </resource>
-    </resources>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-resources-plugin</artifactId>
-        <configuration>
-          <addDefaultExcludes>false</addDefaultExcludes>
-          <escapeString>\</escapeString>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
 </project>
