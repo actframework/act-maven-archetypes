@@ -18,13 +18,14 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>archetype-quickstart</artifactId>
+  <version>'</version>
   <packaging>maven-archetype</packaging>
   <name>ACT Maven Archetype for a simple app with server rendered home page</name>
 
   <parent>
     <groupId>org.actframework</groupId>
     <artifactId>act-maven-archetypes</artifactId>
-    <version>1.8.7.0</version>
+    <version>1.8.7.1-SNAPSHOT</version>
   </parent>
 
 </project>
