@@ -33,11 +33,14 @@
   </parent>
 
   <properties>
-    <revision>1.8.7.0-SNAPSHOT</revision>
+    <act-starter.version>1.8.7.0</act-starter.version>
+    <revision>1.8.7.1-SNAPSHOT</revision>
     <java.version>1.7</java.version>
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
+    <act-starter-support.version>1.8.3-SNAPSHOT</act-starter-support.version>
     <scm.url>git@github.com:actframework/act-maven-archetypes.git</scm.url>
+    <maven-dependency-plugin.version>3.0.2</maven-dependency-plugin.version>
   </properties>
 
   <scm>
@@ -82,6 +85,33 @@
           <addDefaultExcludes>false</addDefaultExcludes>
           <escapeString>\</escapeString>
         </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <version>${maven-dependency-plugin.version}</version>
+        <executions>
+          <execution>
+            <id>unpack</id>
+            <phase>process-resources</phase>
+            <goals>
+              <goal>unpack</goal>
+            </goals>
+            <configuration>
+              <artifactItems>
+                <artifactItem>
+                  <groupId>org.actframework</groupId>
+                  <artifactId>act-starter-support</artifactId>
+                  <version>${act-starter-support.version}</version>
+                  <type>jar</type>
+                  <overWrite>false</overWrite>
+                  <outputDirectory>${project.build.outputDirectory}/archetype-resources/src/main/resources/</outputDirectory>
+                  <includes>**/*.properties</includes>
+                </artifactItem>
+              </artifactItems>
+            </configuration>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
     <extensions>

@@ -17,6 +17,7 @@
       <directory>src/main/resources</directory>
       <includes>
         <include>logback.xml</include>
+        <include>**/*.properties</include>
       </includes>
     </fileSet>
     <fileSet encoding="UTF-8" packaged="true">
@@ -32,7 +33,7 @@
       </includes>
     </fileSet>
     <fileSet encoding="UTF-8">
-      <directory></directory>
+      <directory/>
       <includes>
         <include>.gitignore</include>
       </includes>
