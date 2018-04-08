@@ -20,7 +20,7 @@
 
   <artifactId>act-maven-archetypes</artifactId>
   <packaging>pom</packaging>
-  <version>1.8.7.2-SNAPSHOT</version>
+  <version>1.8.7.2</version>
 
   <name>ActFramework Maven Archetypes Project</name>
   <description>A set of maven archetypes for actframework application</description>
@@ -127,7 +127,7 @@
             <configuration>
               <target>
                 <echo>run chmod in ${basedir}</echo>
-                <chmod file="${project.build.outputDirectory}/archetype-resources/run*" perm="ugo+rx"/>
+                <chmod file="${project.build.outputDirectory}/archetype-resources/run*" perm="ugo+rx" />
               </target>
             </configuration>
           </execution>
