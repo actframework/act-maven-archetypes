@@ -34,11 +34,10 @@
 
   <properties>
     <act-starter.version>1.8.7.0</act-starter.version>
-    <revision>1.8.7.1-SNAPSHOT</revision>
     <java.version>1.7</java.version>
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
-    <act-archetype-support.version>1.8.7.0</act-archetype-support.version>
+    <act-archetype-support.version>1.8.7.1</act-archetype-support.version>
     <scm.url>git@github.com:actframework/act-maven-archetypes.git</scm.url>
     <maven-dependency-plugin.version>3.0.2</maven-dependency-plugin.version>
     <maven-antrun-plugin.version>1.8</maven-antrun-plugin.version>

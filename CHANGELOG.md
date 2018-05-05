@@ -1,5 +1,8 @@
 # Act Maven Archetypes Project
 
+## 1.8.7.3 - 05/May/2018
+* update act-archetype-support to 1.8.7.1
+
 ## 1.8.7.2 - 08/Apr/2018
 * add run_dev and run_prod to the generated project home #4
 * use act-archetype-support to replace act-starter-support for all common archetype project files
