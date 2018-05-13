@@ -20,7 +20,7 @@
 
   <artifactId>act-maven-archetypes</artifactId>
   <packaging>pom</packaging>
-  <version>1.8.7.4-SNAPSHOT</version>
+  <version>1.8.8.0-SNAPSHOT</version>
 
   <name>ActFramework Maven Archetypes Project</name>
   <description>A set of maven archetypes for actframework application</description>
@@ -29,15 +29,15 @@
   <parent>
     <groupId>org.actframework</groupId>
     <artifactId>parent</artifactId>
-    <version>1.8.7</version>
+    <version>1.8.8-RC4</version>
   </parent>
 
   <properties>
-    <act-starter.version>1.8.7.0</act-starter.version>
+    <act-starter.version>1.8.8.0</act-starter.version>
     <java.version>1.7</java.version>
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
-    <act-archetype-support.version>1.8.7.1</act-archetype-support.version>
+    <act-archetype-support.version>1.8.8.1</act-archetype-support.version>
     <scm.url>git@github.com:actframework/act-maven-archetypes.git</scm.url>
     <maven-dependency-plugin.version>3.0.2</maven-dependency-plugin.version>
     <maven-antrun-plugin.version>1.8</maven-antrun-plugin.version>
@@ -66,6 +66,7 @@
         <filtering>true</filtering>
         <includes>
           <include>archetype-resources/pom.xml</include>
+          <include>**/logback.xml</include>
         </includes>
       </resource>
       <resource>
@@ -73,6 +74,7 @@
         <filtering>false</filtering>
         <excludes>
           <exclude>archetype-resources/pom.xml</exclude>
+          <exclude>**/logback.xml</exclude>
         </excludes>
       </resource>
     </resources>
@@ -92,7 +94,7 @@
         <executions>
           <execution>
             <id>unpack-archetype-artifacts</id>
-            <phase>process-resources</phase>
+            <phase>generate-resources</phase>
             <goals>
               <goal>unpack</goal>
             </goals>
@@ -106,6 +108,27 @@
                   <overWrite>false</overWrite>
                   <outputDirectory>${project.build.outputDirectory}</outputDirectory>
                   <includes>**/*</includes>
+                  <excludes>**/logback.xml</excludes>
+                </artifactItem>
+              </artifactItems>
+            </configuration>
+          </execution>
+          <execution>
+            <id>unpack-logback_xml</id>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>unpack</goal>
+            </goals>
+            <configuration>
+              <artifactItems>
+                <artifactItem>
+                  <groupId>org.actframework</groupId>
+                  <artifactId>act-archetype-support</artifactId>
+                  <version>${act-archetype-support.version}</version>
+                  <type>jar</type>
+                  <overWrite>false</overWrite>
+                  <outputDirectory>${project.basedir}/src/main/resources</outputDirectory>
+                  <includes>**/logback.xml</includes>
                 </artifactItem>
               </artifactItems>
             </configuration>

@@ -1,6 +1,7 @@
 package $package;
 
 import act.inject.DefaultValue;
+import org.joda.time.DateTime;
 import org.osgl.mvc.annotation.GetAction;
 
 public class Service {
@@ -19,6 +20,20 @@ public class Service {
     @GetAction("hello")
     public String hello(@DefaultValue("World") String who) {
         return "Hello " + who;
+    }
+
+    /**
+     * Returns an important date in history: 09/Mar/2016.
+     *
+     * [AlphaGo](https://en.wikipedia.org/wiki/AlphaGo), a computer program defeated
+     * [Lee Sedol](https://en.wikipedia.org/wiki/Lee_Sedol), one of the best players at Go
+     * at this date.
+     *
+     * @return an important date in the history
+     */
+    @GetAction("date")
+    public DateTime date() {
+        return DateTime.parse("2016-03-09");
     }
 
 }
