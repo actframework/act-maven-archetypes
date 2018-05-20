@@ -29,15 +29,15 @@
   <parent>
     <groupId>org.actframework</groupId>
     <artifactId>parent</artifactId>
-    <version>1.8.8-RC6</version>
+    <version>1.8.8-RC7</version>
   </parent>
 
   <properties>
-    <act-starter.version>1.8.8.2</act-starter.version>
+    <act-starter.version>1.8.8.3</act-starter.version>
     <java.version>1.7</java.version>
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
-    <act-archetype-support.version>1.8.8.3</act-archetype-support.version>
+    <act-archetype-support.version>1.8.8.4</act-archetype-support.version>
     <scm.url>git@github.com:actframework/act-maven-archetypes.git</scm.url>
     <maven-dependency-plugin.version>3.0.2</maven-dependency-plugin.version>
     <maven-antrun-plugin.version>1.8</maven-antrun-plugin.version>
@@ -108,27 +108,6 @@
                   <overWrite>false</overWrite>
                   <outputDirectory>${project.build.outputDirectory}</outputDirectory>
                   <includes>**/*</includes>
-                  <excludes>**/logback.xml</excludes>
-                </artifactItem>
-              </artifactItems>
-            </configuration>
-          </execution>
-          <execution>
-            <id>unpack-logback_xml</id>
-            <phase>generate-resources</phase>
-            <goals>
-              <goal>unpack</goal>
-            </goals>
-            <configuration>
-              <artifactItems>
-                <artifactItem>
-                  <groupId>org.actframework</groupId>
-                  <artifactId>act-archetype-support</artifactId>
-                  <version>${act-archetype-support.version}</version>
-                  <type>jar</type>
-                  <overWrite>false</overWrite>
-                  <outputDirectory>${project.basedir}/src/main/resources</outputDirectory>
-                  <includes>**/logback.xml</includes>
                 </artifactItem>
               </artifactItems>
             </configuration>
