@@ -1,5 +1,9 @@
 # Act Maven Archetypes Project
 
+## 1.8.8.6 - 20/Jun/2018
+* update to act-starter-1.8.8.5
+* update to act-archetype-support 1.8.8.7
+
 ## 1.8.8.5 - 30/May/2018
 * update to act-archetype-support 1.8.8.6 - for act-e2e-0.0.7
 
