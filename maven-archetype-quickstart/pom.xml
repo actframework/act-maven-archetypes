@@ -21,10 +21,33 @@
   <packaging>maven-archetype</packaging>
   <name>ACT Maven Archetype for a simple app with server rendered home page</name>
 
+  <properties>
+    <main.basedir>${basedir}/..</main.basedir>
+  </properties>
+
   <parent>
     <groupId>org.actframework</groupId>
     <artifactId>act-maven-archetypes</artifactId>
     <version>1.8.8.8-SNAPSHOT</version>
   </parent>
+
+  <build>
+    <resources>
+      <resource>
+        <directory>${main.basedir}/src/main/resources</directory>
+        <filtering>true</filtering>
+        <includes>
+          <include>**/*</include>
+        </includes>
+      </resource>
+      <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+        <includes>
+          <include>**/*</include>
+        </includes>
+      </resource>
+    </resources>
+  </build>
 
 </project>
