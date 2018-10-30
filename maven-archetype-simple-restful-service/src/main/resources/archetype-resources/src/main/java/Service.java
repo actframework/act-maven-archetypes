@@ -26,7 +26,7 @@ public class Service {
      * Returns an important date in history: 09/Mar/2016.
      *
      * [AlphaGo](https://en.wikipedia.org/wiki/AlphaGo), a computer program defeated
-     * [Lee Sedol](https://en.wikipedia.org/wiki/Lee_Sedol), one of the best players at Go
+     * [Lee Sedol](https://en.wikipedia.org/wiki/Lee_Sedol), one of the best human Go players
      * at this date.
      *
      * @return an important date in the history

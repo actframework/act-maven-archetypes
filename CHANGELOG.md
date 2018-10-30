@@ -1,5 +1,9 @@
 # Act Maven Archetypes Project
 
+**1.8.8.9** - 31/Oct/2018
+* fix missing logback.xml file issue
+* fix archetype-simple-restful-service automate testing issue
+
 **1.8.8.8** - 30/Oct/2018
 * update to act-starter-1.8.8.8
 * e2e renamed to test

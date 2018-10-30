@@ -29,6 +29,7 @@
       <directory>src/main/resources</directory>
       <includes>
         <include>**/*.version</include>
+        <include>logback.xml</include>
       </includes>
     </fileSet>
     <fileSet encoding="UTF-8" packaged="true">
