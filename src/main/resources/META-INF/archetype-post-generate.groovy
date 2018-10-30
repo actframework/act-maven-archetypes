@@ -2,7 +2,7 @@ def sep = File.separator
 def moduleDir = new File(request.getOutputDirectory() + sep + request.getArtifactId())
 
 // make script file be executable
-moduleDir.eachFileMatch(~/run_.*/) { file ->
+moduleDir.eachFileMatch(~/(run_.*|pack*|test*)/) { file ->
     file.setExecutable(true, false)
 }
 

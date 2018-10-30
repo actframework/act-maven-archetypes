@@ -1,7 +1,9 @@
 # Act Maven Archetypes Project
 
 **1.8.8.8** - 30/Oct/2018
-
+* update to act-starter-1.8.8.8
+* e2e renamed to test
+* add pack and test script to the project dir
 
 **1.8.8.6** - 21/Jun/2018
 
@@ -12,7 +14,7 @@
 * update to act-archetype-support 1.8.8.7
 
 ## 1.8.8.5 - 30/May/2018
-* update to act-archetype-support 1.8.8.6 - for act-e2e-0.0.7
+* update to act-archetype-support 1.8.8.6 - for act-test-0.0.7
 
 ## 1.8.8.4 - 29/May/2018
 * update to act-starters-1.8.8.4

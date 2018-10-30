@@ -45,7 +45,7 @@
       </includes>
     </fileSet>
     <fileSet encoding="UTF-8">
-      <directory>src/main/resources/e2e</directory>
+      <directory>src/main/resources/test</directory>
       <includes>
         <include>**/*.*</include>
       </includes>
@@ -55,6 +55,10 @@
       <includes>
         <include>.gitignore</include>
         <include>run_*</include>
+        <include>pack</include>
+        <include>pack.bat</include>
+        <include>test</include>
+        <include>test.bat</include>
       </includes>
     </fileSet>
   </fileSets>
