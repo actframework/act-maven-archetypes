@@ -1,5 +1,8 @@
 # Act Maven Archetypes Project
 
+**1.8.11.0** - 05/Nov/2018
+* update to act-1.8.11
+
 **1.8.8.10** - 31/Oct/2018
 * fix missing logback.xml file issue
 * fix archetype-simple-restful-service automate testing issue
