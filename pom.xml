@@ -20,7 +20,7 @@
 
   <artifactId>act-maven-archetypes</artifactId>
   <packaging>pom</packaging>
-  <version>1.8.11.1-SNAPSHOT</version>
+  <version>1.8.12.0-SNAPSHOT</version>
 
   <name>ActFramework Maven Archetypes Project</name>
   <description>A set of maven archetypes for actframework application</description>
@@ -29,14 +29,14 @@
   <parent>
     <groupId>org.actframework</groupId>
     <artifactId>parent</artifactId>
-    <version>1.8.11</version>
+    <version>1.8.12</version>
   </parent>
 
   <properties>
     <java.version>1.7</java.version>
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
-    <act-starter-parent.version>1.8.11.0</act-starter-parent.version>
+    <act-starter-parent.version>1.8.12.0</act-starter-parent.version>
     <scm.url>git@github.com:actframework/act-maven-archetypes.git</scm.url>
     <maven-dependency-plugin.version>3.0.2</maven-dependency-plugin.version>
     <maven-antrun-plugin.version>1.8</maven-antrun-plugin.version>
