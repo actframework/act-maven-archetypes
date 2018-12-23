@@ -39,6 +39,38 @@
     </triggeringPolicy>
   </appender>
 
+  <!-- action trace log file -->
+  <appender name="TRACE_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>act-trace.log</file>
+    <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+      <Pattern>%d{yyyy-MM-dd_HH:mm:ss.SSS} [%thread] %-5level %logger - %msg%n</Pattern>
+    </encoder>
+    <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+      <FileNamePattern>/act-trace.%i.log.zip</FileNamePattern>
+      <MinIndex>1</MinIndex>
+      <MaxIndex>10</MaxIndex>
+    </rollingPolicy>
+    <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+      <MaxFileSize>2MB</MaxFileSize>
+    </triggeringPolicy>
+  </appender>
+
+  <!-- request trace log file -->
+  <appender name="ACCESS_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>act-access.log</file>
+    <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+      <Pattern>%d{yyyy-MM-dd_HH:mm:ss.SSS} [%thread] %-5level %logger - %msg%n</Pattern>
+    </encoder>
+    <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+      <FileNamePattern>/act-access.%i.log.zip</FileNamePattern>
+      <MinIndex>1</MinIndex>
+      <MaxIndex>10</MaxIndex>
+    </rollingPolicy>
+    <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+      <MaxFileSize>2MB</MaxFileSize>
+    </triggeringPolicy>
+  </appender>
+
   <!-- act-test test log file -->
   <appender name="TEST_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
     <file>test.log</file>
@@ -87,13 +119,19 @@
   </logger>
 
   <logger name="act.mail" level="DEBUG" additivity="false">
-    <appender-ref ref="FILE" />
     <appender-ref ref="STDOUT"/>
   </logger>
 
   <logger name="act.db" level="INFO" additivity="false">
-    <appender-ref ref="FILE" />
     <appender-ref ref="DB_FILE" />
+  </logger>
+
+  <logger name="act.trace.handler" level="TRACE" additivity="true">
+    <appender-ref ref="TRACE_FILE" />
+  </logger>
+
+  <logger name="act.trace.request" level="TRACE" additivity="true">
+    <appender-ref ref="ACCESS_FILE" />
   </logger>
 
   <logger name="act.test" level="INFO" additivity="false">
