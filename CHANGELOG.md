@@ -1,5 +1,9 @@
 # Act Maven Archetypes Project
 
+**1.8.18.0**
+* update starter to 1.8.18.0
+* It generates two logback.xml files in project #5
+
 **1.8.17.1** - 24/Dec/2018
 * update starter to 1.8.17.1
 
