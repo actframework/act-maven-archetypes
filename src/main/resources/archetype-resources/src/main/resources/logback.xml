@@ -64,22 +64,7 @@
     </triggeringPolicy>
   </appender>
 
-  <appender name="METRIC_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-    <file>act-metric.log</file>
-    <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
-      <Pattern>%d{yyyy-MM-dd_HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</Pattern>
-    </encoder>
-
-    <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-      <FileNamePattern>/act-metric.%i.log.zip</FileNamePattern>
-      <MinIndex>1</MinIndex>
-      <MaxIndex>10</MaxIndex>
-    </rollingPolicy>
-
-    <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
-      <MaxFileSize>2MB</MaxFileSize>
-    </triggeringPolicy>
-  </appender>
+  <appender name="NOP" class="ch.qos.logback.core.helpers.NOPAppender"/>
 
   <logger name="act" level="INFO" additivity="false">
     <appender-ref ref="FILE" />
@@ -100,7 +85,7 @@
   </logger>
 
   <logger name="act.metric" level="TRACE">
-    <appender-ref ref="METRIC_FILE" />
+    <appender-ref ref="NOP" />
   </logger>
 
   <logger name="$package" level="DEBUG" additivity="false">
