@@ -1,7 +1,7 @@
 # Act Maven Archetypes Project
 
 **1.8.23.0** - 17/Jun/2019
-* update starter to 1.8.23.1
+* update starter to 1.8.23.2
 * add test.properties for test configuration template
 
 **1.8.22.0** - 21/May/2019
