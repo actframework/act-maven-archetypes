@@ -1,5 +1,9 @@
 # Act Maven Archetypes Project
 
+**1.8.24.0** - 23/Jun/2019
+* update starter to 1.8.24.0
+* update pom.xml template with additional information about JVM argument setting and docker configuration 
+
 **1.8.23.0** - 17/Jun/2019
 * update starter to 1.8.23.2
 * add test.properties for test configuration template

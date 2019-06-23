@@ -14,6 +14,20 @@
     <groupId>org.actframework</groupId>
     <artifactId>act-starter-parent</artifactId>
     <version>${act-starter-parent.version}</version>
+
+    <!-- tune your JVM arguments here
+    <vmargs.heap.init>256M</vmargs.heap.init>
+    <vmargs.heap.max>2G</vmargs.heap.max>
+    <vmargs.extended />
+    -->
+
+    <!-- set your docker configuration here if needed
+    <docker.repo>${project.groupId}/${project.artifactId}</docker.repo>
+    <docker.profile>prod</docker.profile>
+    <docker.group>default</docker.group>
+    <docker.http.port>5460</docker.http.port>
+    <docker.cli.port>5461</docker.cli.port>
+    <-->
   </parent>
 
   <properties>
