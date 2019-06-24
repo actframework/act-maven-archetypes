@@ -14,6 +14,12 @@
     <groupId>org.actframework</groupId>
     <artifactId>act-starter-parent</artifactId>
     <version>${act-starter-parent.version}</version>
+  </parent>
+
+  <properties>
+    <!-- remove the following line if you are on Java 7-->
+    <java.version>1.8</java.version>
+    <app.entry>\${groupId}.AppEntry</app.entry>
 
     <!-- tune your JVM arguments here
     <vmargs.heap.init>256M</vmargs.heap.init>
@@ -28,12 +34,6 @@
     <docker.http.port>5460</docker.http.port>
     <docker.cli.port>5461</docker.cli.port>
     <-->
-  </parent>
-
-  <properties>
-    <!-- remove the following line if you are on Java 7-->
-    <java.version>1.8</java.version>
-    <app.entry>\${groupId}.AppEntry</app.entry>
   </properties>
 
   <dependencies>
