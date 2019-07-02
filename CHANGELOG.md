@@ -1,5 +1,9 @@
 # Act Maven Archetypes Project
 
+**1.8.25.0** - 03/Jul/2019
+* update starter to 1.8.25.0
+* add cron.properties for cron expression samples
+
 **1.8.24.1** - 25/Jun/2019
 * add 'resource.filtering' to configuration app.properties template
 * fix `pom.xml` on jvm option, docker setting comments
