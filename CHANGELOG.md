@@ -1,5 +1,8 @@
 # Act Maven Archetypes Project
 
+**1.8.26.0** - 21/Jul/2019
+* update starter to 1.8.26.0
+
 **1.8.25.0** - 03/Jul/2019
 * update starter to 1.8.25.0
 * add cron.properties for cron expression samples
