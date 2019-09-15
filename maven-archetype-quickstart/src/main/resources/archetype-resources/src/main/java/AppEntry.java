@@ -3,7 +3,11 @@ package $package;
 import act.Act;
 import act.inject.DefaultValue;
 import act.util.Output;
+import org.osgl.logging.LogManager;
+import org.osgl.logging.Logger;
 import org.osgl.mvc.annotation.GetAction;
+import osgl.version.Version;
+import osgl.version.Versioned;
 
 /**
  * A simple hello world app entry
@@ -13,7 +17,18 @@ import org.osgl.mvc.annotation.GetAction;
  * in the browser!
  */
 @SuppressWarnings("unused")
+@Versioned
 public class AppEntry {
+
+    /**
+     * Version of this application
+     */
+    public static final Version VERSION = Version.of(AppEntry.class);
+
+    /**
+     * A logger instance that could be used through out the application
+     */
+    public static final Logger LOGGER = LogManager.get(AppEntry.class);
 
     /**
      * The home (`/`) endpoint.

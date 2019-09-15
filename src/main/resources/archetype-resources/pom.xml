@@ -33,7 +33,11 @@
     <docker.group>default</docker.group>
     <docker.http.port>5460</docker.http.port>
     <docker.cli.port>5461</docker.cli.port>
-    <-->
+    -->
+
+    <!-- lombok support
+    <act.lombok>/path/to/lombok.jar</act.lombok>
+    -->
   </properties>
 
   <dependencies>
