@@ -7,4 +7,7 @@ if [ ! -f target/dist/start ]; then
 else
     cd target/dist
 fi
-./run $*
+# we want to disable session secure as this is running
+# in the local host, we don't expect there are SSL
+# certificate enabled.
+./run -Dsession.secure=false $*

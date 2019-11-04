@@ -17,9 +17,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>archetype-simple-restful-service</artifactId>
+  <artifactId>archetype-chatroom</artifactId>
   <packaging>maven-archetype</packaging>
-  <name>ACT Maven Archetype for a simple RESTFUL service</name>
+  <name>ACT Maven Archetype for a simple chatroom app</name>
 
   <properties>
     <main.basedir>${basedir}/..</main.basedir>

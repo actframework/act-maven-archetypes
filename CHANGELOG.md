@@ -1,5 +1,11 @@
 # Act Maven Archetypes Project
 
+**1.8.29.0** - 04/Nov/2019
+* update starter to 1.8.29.0
+
+**1.8.28.1** - 01/Oct/2019
+* update starter to 1.8.28.1
+
 **1.8.28.0** - 21/Jul/2019
 * update starter to 1.8.28.0
 

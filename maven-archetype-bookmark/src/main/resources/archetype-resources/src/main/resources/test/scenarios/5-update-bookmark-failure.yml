@@ -1,0 +1,22 @@
+Scenario(Update bookmark - exceptional cases):
+  issueKey: 5
+  depends:
+    - Add bookmark
+  urlContext: bookmarks
+  interactions:
+    - description: It shall respond 400 with error message "Description expected" if the description specified is empty or null
+      request:
+        put: ${newBookmarkId}
+        json:
+          description: ""
+      response:
+        status: 400
+        message:
+          - contains: must not be blank string
+    - description: It shall respond 403 if the bookmark is not created by the current logged in user
+      request:
+        put: ${bookmarkFacebookId}
+        json:
+          description: whatever
+      response:
+        status: 403

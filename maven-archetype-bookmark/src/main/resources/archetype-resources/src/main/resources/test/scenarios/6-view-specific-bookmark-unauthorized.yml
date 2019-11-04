@@ -1,0 +1,12 @@
+Scenario(View bookmark - unauthorized):
+  issueKey: 6
+  partition: non-authenticated
+  depends:
+    - Update bookmark
+  urlContext: bookmarks
+  interactions:
+    - description: It shall respond 401 if a guest user (user that not logged in) submit request to update bookmarks
+      request:
+        delete: ${newBookmarkId}
+      response:
+        status: 401

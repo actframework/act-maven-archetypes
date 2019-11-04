@@ -1,0 +1,11 @@
+Scenario(Login B):
+  noIssue: true
+  fixtures:
+    - users.yml
+  description: Prepare testing data - login user B
+  interactions:
+    - request:
+        post: login
+        json:
+          email: b@demo.com
+          password: password
