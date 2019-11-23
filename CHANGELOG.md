@@ -1,5 +1,9 @@
 # Act Maven Archetypes Project
 
+**1.8.30.0** - 24/Nov/2019
+* update starter to 1.8.30.0
+* migrate test resources to `src/test/resources`
+
 **1.8.29.0** - 04/Nov/2019
 * update starter to 1.8.29.0
 
