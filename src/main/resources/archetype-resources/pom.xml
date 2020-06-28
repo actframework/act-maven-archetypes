@@ -17,8 +17,6 @@
   </parent>
 
   <properties>
-    <!-- uncomment and update the following line if you are NOT on Java 8-->
-    <!-- <java.version>14</java.version> -->
     <app.entry>\${groupId}.AppEntry</app.entry>
 
     <!-- tune your JVM arguments here
